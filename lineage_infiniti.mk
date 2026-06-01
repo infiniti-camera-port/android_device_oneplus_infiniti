@@ -14,9 +14,6 @@ $(call inherit-product, device/oneplus/infiniti/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Don't uncomment unless you've said yes to cloning GMS from RedLintu16
-#$(call inherit-product, vendor/gms/gms.mk)
-
 PRODUCT_NAME := lineage_infiniti
 PRODUCT_DEVICE := infiniti
 PRODUCT_MANUFACTURER := OnePlus
