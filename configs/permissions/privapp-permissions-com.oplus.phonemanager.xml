@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+
+     Port of the com.oplus.phonemanager entries from stock OOS 16.0.8
+     my_stock/etc/permissions/privapp-permissions-oplus-product.xml and
+     my_stock/etc/permissions/privapp-permissions-oplus-products.xml.
+     PhoneManager installs to system_ext on this build; same partition
+     as the app per the allowlist partition rule.
+-->
+<permissions>
+    <privapp-permissions package="com.oplus.phonemanager">
+        <permission name="android.permission.DELETE_PACKAGES"/>
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.SET_BIOMETRIC_DIALOG_ADVANCED"/>
+        <permission name="android.permission.USE_RESERVED_DISK"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+</permissions>

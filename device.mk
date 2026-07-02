@@ -55,6 +55,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare-service.oplus
 
+# Privileged permission allowlists (Oplus private-safe stack)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.oplus.exsystemservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.oplus.exsystemservice.xml \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.oplus.pantanal.ums.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.oplus.pantanal.ums.xml \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.oplus.phonemanager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.oplus.phonemanager.xml
+
 # Recovery
 $(call soong_config_set_bool,recovery,target_recovery_uses_qti_drm,true)
 
