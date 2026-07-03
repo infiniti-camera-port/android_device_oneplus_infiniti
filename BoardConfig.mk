@@ -12,6 +12,9 @@ BOARD_SUPER_PARTITION_SIZE := 17062428672
 # Include the common OEM chipset BoardConfig.
 include device/oneplus/sm8850-common/BoardConfigCommon.mk
 
+# Camera (Oplus camera port) — common camera board fragment (split topology)
+-include device/oneplus/sm8850-common-camera/BoardConfigCommonCamera.mk
+
 DEVICE_PATH := device/oneplus/infiniti
 
 # Assert
