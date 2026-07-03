@@ -14,6 +14,12 @@ $(call inherit-product, device/oneplus/infiniti/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Keep the userdebug build debuggable (ro.debuggable=1) so `adb root` works out of the box.
+# crDroid/LineageOS default this off (PRODUCT_NOT_DEBUGGABLE_IN_USERDEBUG := true in
+# vendor/lineage/config/common.mk), which also hides AOSP's Rooted-debugging developer toggle,
+# leaving no on-device way to enable adb root. Override it here (last := wins, no more inherits).
+PRODUCT_NOT_DEBUGGABLE_IN_USERDEBUG := false
+
 PRODUCT_NAME := lineage_infiniti
 PRODUCT_DEVICE := infiniti
 PRODUCT_MANUFACTURER := OnePlus
