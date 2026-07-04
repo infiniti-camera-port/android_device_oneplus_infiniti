@@ -101,7 +101,7 @@ $(call inherit-product, vendor/oneplus/infiniti/infiniti-vendor.mk)
 
 # Camera (Oplus camera port) — split device-camera topology:
 # infiniti-camera.mk -> sm8850-common-camera.mk -> vendor/oplus/camera payload.
-$(call inherit-product, device/oneplus/infiniti-camera/infiniti-camera.mk)
+$(call inherit-product, vendor/oneplus/camera-infiniti/camera-infiniti.mk)
 
 # Device is 4K-pages (kernel CONFIG_ARM64_4K_PAGES=y); declare it so check_elf_file
 # does not require the 16K-readiness alignment that older 4K OEM camera JNI libs lack.
