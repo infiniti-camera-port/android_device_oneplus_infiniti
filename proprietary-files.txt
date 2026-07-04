@@ -24,15 +24,6 @@ odm/lib/rfsa/adsp/libtfadsp_sb5_5_tx.so
 odm/lib/rfsa/adsp/nlc_bgth_v1_5.so
 
 # AI Unit
-my_stock/app/AIMemory/AIMemory.apk:product/app/AIMemory/AIMemory.apk;PRESIGNED
-my_stock/app/AIMemory/lib/arm64/libaiunit_sdk_core.so:product/app/AIMemory/lib/arm64/libaiunit_sdk_core.so;MAKE_COPY_RULE_ONLY
-my_stock/app/AIMemory/lib/arm64/libnoise.so:product/app/AIMemory/lib/arm64/libnoise.so;MAKE_COPY_RULE_ONLY
-my_stock/app/AIMemory/lib/arm64/libopluslog.so:product/app/AIMemory/lib/arm64/libopluslog.so;MAKE_COPY_RULE_ONLY
-my_stock/app/AIMemory/lib/arm64/libscan_engine_decode.so:product/app/AIMemory/lib/arm64/libscan_engine_decode.so;MAKE_COPY_RULE_ONLY
-my_stock/app/AIMemory/lib/arm64/libscan_engine_detect.so:product/app/AIMemory/lib/arm64/libscan_engine_detect.so;MAKE_COPY_RULE_ONLY
-my_stock/app/AIMemory/lib/arm64/libtensorflowlite.so:product/app/AIMemory/lib/arm64/libtensorflowlite.so;MAKE_COPY_RULE_ONLY
-my_stock/app/AIMemory/lib/arm64/libwb_tables_549543368749780587_1.so:product/app/AIMemory/lib/arm64/libwb_tables_549543368749780587_1.so;MAKE_COPY_RULE_ONLY
-my_stock/app/AIMemory/lib/arm64/libwbkit-seckit3.so:product/app/AIMemory/lib/arm64/libwbkit-seckit3.so;MAKE_COPY_RULE_ONLY
 my_product/app/AONService/AONService.apk:product/app/AONService/AONService.apk;PRESIGNED
 my_product/app/AONService/lib/arm64/libNoTopK.so:product/app/AONService/lib/arm64/libNoTopK.so;MAKE_COPY_RULE_ONLY
 my_product/app/AONService/lib/arm64/libPOSTPROCESS.so:product/app/AONService/lib/arm64/libPOSTPROCESS.so;MAKE_COPY_RULE_ONLY
