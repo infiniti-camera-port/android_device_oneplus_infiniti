@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 15 (CPH2745_16.0.8.300(EX01)).
+## are from OnePlus 15 (CPH2745).
 
 # ACDB
 odm/etc/acdbdata/FTM/acdb_cal.acdb
@@ -1856,3 +1856,7 @@ odm/etc/wifi/peach/bdwlan.elf
 odm/etc/wifi/peach/regdb.bin
 odm/etc/wifi/peach/regdb_version
 odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini
+
+# Camera (Oplus camera port): stock libutils/libui ABI for libsharebuffer_impl
+vendor/lib64/libutils.so:vendor/lib64/libutils-stock.so;FIX_SONAME
+vendor/lib64/libui.so:vendor/lib64/libui-stock.so;FIX_SONAME
