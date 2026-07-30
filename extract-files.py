@@ -20,9 +20,6 @@ from extract_utils.main import (
 namespace_imports = [
     'hardware/oplus',
     'hardware/qcom-caf/sm8850',
-    # com.oplus.node.preview.v2 links camera.oemlayer.uilayer, which now ships
-    # from the common camera lane so the OEM layer stays one donor-matched unit.
-    'proprietary/vendor/oneplus/camera-sm8850-common',
     'vendor/oneplus/sm8850-common',
     'vendor/qcom/opensource/commonsys-intf/display',
 ]
